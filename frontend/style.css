@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf4;
+    color: #333;
+}
+
+header {
+    background: #263b2d;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc978;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fce6ce, #fff5e8);
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #263b2d;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    font: inherit;
+}
+
+.hero input {
+    width: min(350px, 90%);
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+button {
+    background: #e47735;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #bd5721;
+}
+
+main {
+    padding: 55px 7%;
+}
+
+main h2, .add-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #263b2d;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #00000012;
+    padding-bottom: 22px;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 18px 18px 10px;
+    font-size: 21px;
+}
+
+.recipe-card p {
+    margin: 0 18px 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.recipe-card button {
+    margin-left: 18px;
+}
+
+.add-section {
+    background: #f4eadc;
+    padding: 55px 20px;
+}
+
+#recipeForm {
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#recipeForm input, #recipeForm textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+
+#recipeForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+footer {
+    background: #263b2d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}
